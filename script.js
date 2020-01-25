@@ -1,14 +1,27 @@
 // Assignment Code
-var generateBtn = document.querySelector("#generate");
-var charSet = "a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,0,1,2,3,4,5,6,7,8,9";
-var passwordLength = prompt("5, 8 or 10 characters?");
-//Create a loop that pulls the required number of characters from array
+let generateBtn = document.querySelector("#generate");
+const lowerChars = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+const numberChars = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+let passwordLength = prompt("5, 8 or 10 characters?");
 
+//Create a loop that pulls the required number of characters from array
+while(password[randomIndex] !== undefined) {
+  randomIndex = Math.floor(Math.random() * option.length);
+}
+
+
+let option = {
+  needsLower: true,
+  needsNumber: true,
+  length: 10
+}
 
 // Write password to the #password input
 function generatePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+  passwordArray = [];
+
+  let password = generatePassword();
+  let passwordText = document.querySelector("#password");
 
 
   passwordText.value = password;
