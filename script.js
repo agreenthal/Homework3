@@ -145,3 +145,4 @@ btncopyEl.addEventListener("click", function () {
     alert("Copied your new password");
 })
 
+
